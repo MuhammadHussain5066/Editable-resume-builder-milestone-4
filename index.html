@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder by Muhammad Hussain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Editable Resume Builder by Muhammad Hussain</h1>
+    
+    <div id="resumeForm">
+        <h2>Personal Information</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="phone" placeholder="Phone Number">
+        
+        <h2>Education</h2>
+        <input type="text" id="degree" placeholder="Degree">
+        <input type="text" id="institution" placeholder="Institution">
+        <input type="text" id="graduationYear" placeholder="Graduation Year">
+        
+        <h2>Skills (comma-separated)</h2>
+        <input type="text" id="skills" placeholder="e.g., HTML, CSS, JavaScript">
+        
+        <h2>Work Experience</h2>
+        <input type="text" id="jobTitle" placeholder="Job Title">
+        <input type="text" id="company" placeholder="Company">
+        <input type="text" id="duration" placeholder="Duration">
+        <input type="text" id="responsibilities" placeholder="Responsibilities">
+        
+        <button onclick="generateResume()">Generate Resume</button>
+    </div>
+
+    <div id="generatedResume"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
